@@ -27,25 +27,25 @@
 <style>
 /* Recenze - kompaktni verze. Je to tady a ne ve styl.css schvalne: zmena stylu
    by znamenala prepsat ?v= ve vsech strankach vcetne polskych. */
-.rec-grid{max-width:1100px;gap:16px;margin-top:34px}
-.rec{padding:24px 22px 20px;border-radius:14px}
-.rec-cara{width:32px;margin-bottom:14px}
-.rec blockquote{font-size:16px;line-height:1.58}
-.rec figcaption{margin-top:16px;font-size:11px;letter-spacing:.14em}
-.hvezdy b{font-size:22px}
-.hvezdy span{font-size:12px;margin-top:8px}
-@media (min-width:1000px){.rec-grid{grid-template-columns:repeat(4,1fr)}}
-@media (min-width:700px) and (max-width:999px){.rec-grid{grid-template-columns:repeat(2,1fr);max-width:680px}}
-@media (max-width:699px){
+/* Dvanact recenzi se do mrizky nevejde - vodorovne listovani na vsech sirkach. */
+  .rec-cara{width:32px;margin-bottom:14px}
+  .rec figcaption{margin-top:16px;font-size:11px;letter-spacing:.14em}
+  .hvezdy b{font-size:22px}
+  .hvezdy span{font-size:12px;margin-top:8px}
   .rec-grid{display:flex;max-width:none;gap:12px;margin:26px -22px 0;padding:2px 22px 12px;
     overflow-x:auto;overscroll-behavior-x:contain;scroll-snap-type:x mandatory;
     -webkit-overflow-scrolling:touch;scrollbar-width:none}
   .rec-grid::-webkit-scrollbar{display:none}
-  .rec{flex:0 0 76%;margin:0;scroll-snap-align:center;padding:22px 20px 18px}
+  .rec{flex:0 0 76%;margin:0;scroll-snap-align:center;padding:22px 20px 18px;border-radius:14px}
   .rec.rv{opacity:1;transform:none}
   .rec blockquote{font-size:17px}
   .rec-pod{margin-top:18px}
-}
+  @media (min-width:700px){
+    .rec-grid{max-width:1100px;margin:34px auto 0;padding:2px 4px 16px;gap:16px;
+      scroll-snap-type:x proximity}
+    .rec{flex:0 0 300px;padding:24px 22px 20px}
+    .rec blockquote{font-size:16px;line-height:1.58}
+  }
 </style>
 </head>
 <body class="v2">
@@ -137,7 +137,7 @@
 <!-- 4b. RECENZE -->
 <section class="sec recenze-sekce" id="recenze">
   <div class="kicker rv" style="text-align:center">Co říkají první čtenářky</div>
-  <div class="hvezdy rv d1"><b>★★★★★</b><span>4 recenze · hodnocení 5,0 z&nbsp;5</span></div>
+  <div class="hvezdy rv d1"><b>★★★★★</b><span>12 recenzí · hodnocení 4,9 z&nbsp;5</span></div>
   <div class="rec-grid">
     <figure class="rec rv d1">
       <div class="rec-cara"></div>
@@ -146,13 +146,53 @@
     </figure>
     <figure class="rec rv d2">
       <div class="rec-cara"></div>
-      <blockquote>Napínavé, vzrušující, už se těším až to přečtu celé.</blockquote>
-      <figcaption>Kateřina <span>· Strakonice</span></figcaption>
+      <blockquote>Text má úžasný nádech a&nbsp;skvělou dynamiku, která mě okamžitě vtáhla do děje. Tento žánr a&nbsp;styl psaní mám velmi ráda. Už teď vím, že si knihu po jejím vydání stoprocentně koupím. Jsem zvědavá, jak se bude příběh vyvíjet dál, ale náběh má perfektní!</blockquote>
+      <figcaption>Jarka <span>· Sokolov</span></figcaption>
     </figure>
     <figure class="rec rv d3">
       <div class="rec-cara"></div>
+      <blockquote>Stačily dvě kapitoly… A&nbsp;už se nemůžu dočkat, až kniha vyjde a&nbsp;já si ji budu moct přečíst. Tajemný Medvěd už teď okouzlil čtenáře a&nbsp;příběh bude jistě strhující a&nbsp;nečekaný.</blockquote>
+      <figcaption>Klára <span>· Brno</span></figcaption>
+    </figure>
+    <figure class="rec rv d4">
+      <div class="rec-cara"></div>
       <blockquote>Je to super ukážka. Zaujalo ma, ako vedel vopred, že príde. Ale pripadá mi nejaký záhadný. Rada by som si prečítala celú knihu.</blockquote>
       <figcaption>Maria <span>· Nitra</span></figcaption>
+    </figure>
+    <figure class="rec rv d1">
+      <div class="rec-cara"></div>
+      <blockquote>Začetla jsem se překvapivě rychle a&nbsp;dost mě mrzelo, že už ukázka končí. Těším se na knihu.</blockquote>
+      <figcaption>Bára <span>· Praha</span></figcaption>
+    </figure>
+    <figure class="rec rv d2">
+      <div class="rec-cara"></div>
+      <blockquote>Ukázka je velmi chytlavá. Někdy mám problém knihu rozečíst, ale tady mě chytil příběh už v&nbsp;první kapitole. Kniha vypadá velmi zajímavě a&nbsp;tajemně. Moc se těším na její vydání a&nbsp;určitě ji chci ve své knihovně.</blockquote>
+      <figcaption>Jiřka <span>· Duchcov</span></figcaption>
+    </figure>
+    <figure class="rec rv d3">
+      <div class="rec-cara"></div>
+      <blockquote>Napínavé, vzrušující, už se těším až to přečtu celé.</blockquote>
+      <figcaption>Kateřina <span>· Strakonice</span></figcaption>
+    </figure>
+    <figure class="rec rv d4">
+      <div class="rec-cara"></div>
+      <blockquote>Líbilo se mi, jak člověk byl poměrně rychle seznámen s&nbsp;dvěma hlavními postavami a&nbsp;ta hlavní hrdinka si hned získala mé sympatie. Svou neohrožeností vydat se ven do sněhové bouře…</blockquote>
+      <figcaption>Martina <span>· Jihlava</span></figcaption>
+    </figure>
+    <figure class="rec rv d1">
+      <div class="rec-cara"></div>
+      <blockquote>Kniha je písaná veľmi pútavo, už sa teším na jej pokračovanie.</blockquote>
+      <figcaption>Eva <span>· Bratislava</span></figcaption>
+    </figure>
+    <figure class="rec rv d2">
+      <div class="rec-cara"></div>
+      <blockquote>Ukázku jsem přečetla hned a&nbsp;oproti jiným knihám je fajn, že to má spád. Žádné zbytečné zdlouhavé popisování okolí a&nbsp;podobně. Moc se na tu knihu těším a&nbsp;doufám, že to bude gradovat.</blockquote>
+      <figcaption>Blanka <span>· Ostrov</span></figcaption>
+    </figure>
+    <figure class="rec rv d3">
+      <div class="rec-cara"></div>
+      <blockquote>Naznačená zápletka. Zvědavost hlavní postavy. Jsem zvědavá na rozuzlení děje.</blockquote>
+      <figcaption>Vlasta <span>· Štětí</span></figcaption>
     </figure>
     <figure class="rec rv d4">
       <div class="rec-cara"></div>
