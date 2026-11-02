@@ -71,9 +71,9 @@
     var sek=document.getElementById('recenze');
     var vRecenzich=false;
     var citaty=[
-      ['Potřebuji okamžitě víc a\u00a0víc.','Ivana'],
-      ['Je to fakt úžasný.','Ivana'],
-      ['Napínavé, vzrušující…','Kateřina']
+      ['Hltala jsem každé slovo.','Barbora'],
+      ['Začetla jsem se překvapivě rychle.','Bára'],
+      ['Napínavé a\u00a0vzrušující už od prvních stránek.','Nikila']
     ];
     var i=0;
     function uprav(){
